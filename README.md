@@ -1,6 +1,6 @@
 <p align="center"><img src="https://raw.githubusercontent.com/zumcoin/zum-assets/master/ZumCoin/zumcoin_logo_design/3d_green_lite_bg/ZumLogo_800x200px_lite_bg.png" width="400"></p>
 
-# Upstream README
+
 cryptonote-nodejs-pool
 ======================
 
@@ -10,7 +10,6 @@ High performance Node.js (with native C addons) mining pool for CryptoNote based
 #### Table of Contents
 * [Features](#features)
 * [Community Support](#community--support)
-* [Pools Using This Software](#pools-using-this-software)
 * [Usage](#usage)
   * [Requirements](#requirements)
   * [Downloading & Installing](#1-downloading--installing)
@@ -157,7 +156,7 @@ npm update
 
 #### 2) Configuration
 
-Copy the `config_examples/COIN.json` file of your choice to `config.json` then overview each options and change any to match your preferred setup.
+Please overview each options in `config.json` and change settings to match your pool setup. 
 
 Explanation for each field:
 ```javascript
@@ -165,10 +164,10 @@ Explanation for each field:
 "poolHost": "your.pool.host",
 
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "graft",
+"coin": "zumcoin",
 
 /* Used for front-end display */
-"symbol": "GRFT",
+"symbol": "ZUM",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
 "coinUnits": 100000000,
@@ -188,7 +187,7 @@ Explanation for each field:
    Supported variants for "cryptonight_light": 0 (Original), 1 (Aeon v7), 2 (IPBC)
    Supported blob types: 0 (Cryptonote), 1 (Forknote v1), 2 (Forknote v2), 3 (Cryptonote v2 / Masari) */
 "cnAlgorithm": "cryptonight",
-"cnVariant": 1,
+"cnVariant": 2,
 "cnBlobType": 0,
 
 /* Logging */
@@ -229,7 +228,7 @@ Explanation for each field:
     "poolAddress": "Zum1ygxTEuxLdGCU9bH3BWeRWtyVv8J2p81bqDQANNaFfkV8hNXfqoTUb3DZLfUgwrW9rYpvGt3wSQDByor1G8DfVg5xDJi25KK",
 
     /* This is the integrated address prefix used for miner login validation. */
-    "intAddressPrefix": 4153412,
+    "intAddressPrefix": null,
 
     /* Poll RPC daemons for new blocks every this many milliseconds. */
     "blockRefreshInterval": 1000,
