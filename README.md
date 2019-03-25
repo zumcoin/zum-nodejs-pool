@@ -718,14 +718,14 @@ the Node.js modules, and any config files that may have been changed.
 ### JSON-RPC Commands from CLI
 
 Documentation for JSON-RPC commands can be found here:
-* Daemon https://wiki.bytecoin.org/wiki/JSON_RPC_API
-* Wallet https://wiki.bytecoin.org/wiki/Wallet_JSON_RPC_API
+* Daemon https://api-docs.zumcoin.org/#daemon-json-rpc-api
+* Wallet https://api-docs.zumcoin.org/#wallet-rpc-api
 
 
 Curl can be used to use the JSON-RPC commands from command-line. Here is an example of calling `getblockheaderbyheight` for block 100:
 
 ```bash
-curl 127.0.0.1:18081/json_rpc -d '{"method":"getblockheaderbyheight","params":{"height":100}}'
+curl 127.0.0.1:17935/json_rpc -d '{"method":"getblockheaderbyheight","params":{"height":100}}'
 ```
 
 
@@ -751,7 +751,7 @@ Thanks for supporting my works on this project! If you want to make a donation t
 * IntenseCoin (ITNS): `iz4fRGV8XsRepDtnK8XQDpHc3TbtciQWQ5Z9285qihDkCAvB9VX1yKt6qUCY6sp2TCC252SQLHrjmeLuoXsv4aF42YZtnZQ53`
 * Masari (MSR): `5n7mffxVT9USrq7tcG3TM8HL5yAz7MirUWypXXJfHrNfTcjNtDouLAAGex8s8htu4vBpmMXFzay8KG3jYGMFhYPr2aMbN6i`
 * Stellite (XTL): `Se45GzgpFG3CnvYNwEFnxiRHD2x7YzRnhFLdxjUqXdbv3ysNbfW5U7aUdn87RgMRPM7xwN6CTbXNc7nL5QUgcww11bDeypTe1`
-* ZumCoin (ZUM)" `Zum1ygxTEuxLdGCU9bH3BWeRWtyVv8J2p81bqDQANNaFfkV8hNXfqoTUb3DZLfUgwrW9rYpvGt3wSQDByor1G8DfVg5xDJi25KK`
+* ZumCoin (ZUM): `Zum1ygxTEuxLdGCU9bH3BWeRWtyVv8J2p81bqDQANNaFfkV8hNXfqoTUb3DZLfUgwrW9rYpvGt3wSQDByor1G8DfVg5xDJi25KK`
 
 
 Credits
