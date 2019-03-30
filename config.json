@@ -8,7 +8,7 @@
     "coinDifficultyTarget": 120,
 
     "daemonType": "zumcoin",
-    "cnAlgorithm": "cryptonight-zum-light",
+    "cnAlgorithm": "cryptonight-zum-lite",
     "cnVariant": 2,
     "cnBlobType": 2,
 
@@ -159,7 +159,7 @@
     },
 
     "redis": {
-        "host": "redis",
+        "host": "127.0.0.1",
         "port": 6379,
         "auth": null,
         "db": 0,
