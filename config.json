@@ -1,10 +1,10 @@
 {
-    "poolHost": "your.poolhost.tld",
+    "poolHost": "https://EnterYourPoolAddressHere.com",
 
-    "coin": "zumcoin",
+    "coin": "ZUMCOIN-TEST",
     "symbol": "ZUM",
     "coinUnits": 100000000,
-    "coinDecimalPlaces": 8,
+    "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 120,
 
     "daemonType": "zumcoin",
@@ -27,13 +27,13 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "**Your Pool Wallet Address**",
+        "poolAddress": "replace this with your wallet address",
         "intAddressPrefix": null,
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
-        "sslCert": "./cert.pem",
-        "sslKey": "./privkey.pem",
-        "sslCA": "./chain.pem",
+        "sslCert": "./cert.crt",
+        "sslKey": "./key.key",
+        "sslCA": "./ca_bundle.crt",
         "ports": [
             {
                 "port": 3333,
@@ -70,19 +70,19 @@
             }
         ],
         "varDiff": {
-            "minDiff": 100,
-            "maxDiff": 500000,
+            "minDiff": 500,
+            "maxDiff": 100000000,
             "targetTime": 60,
             "retargetTime": 30,
             "variancePercent": 30,
             "maxJump": 100
         },
         "paymentId": {
-            "addressSeparator": "."
+            "addressSeparator": "+"
         },
         "fixedDiff": {
             "enabled": true,
-            "addressSeparator": "+"
+            "addressSeparator": "."
         },
         "shareTrust": {
             "enabled": true,
@@ -107,7 +107,7 @@
 
     "payments": {
         "enabled": true,
-        "interval": 360,
+        "interval": 30,
         "maxAddresses": 50,
         "mixin": 1,
         "priority": 0,
@@ -116,7 +116,7 @@
         "minerPayFee" : true,
         "minPayment": 1000000000,
         "maxPayment": null,
-        "maxTransactionAmount": 0,
+        "maxTransactionAmount": 1000000000000,
         "denomination": 100000000
     },
 
@@ -124,26 +124,25 @@
         "enabled": true,
         "interval": 30,
         "depth": 30,
-        "poolFee": 0.5,
+        "poolFee": 0.0,
         "devDonation": 0.0,
         "networkFee": 0.0
     },
 
     "api": {
         "enabled": true,
-        "hashrateWindow": 2400,
-        "updateInterval": 5,
+        "hashrateWindow": 600,
+        "updateInterval": 10,
         "bindIp": "0.0.0.0",
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "host": "api",
-        "password": "CHANGE ME",
-        "ssl": false,
+        "password": "passhere",
+        "ssl": true,
         "sslPort": 8119,
-        "sslCert": "./cert.pem",
-        "sslKey": "./privkey.pem",
-        "sslCA": "./chain.pem",
+        "sslCert": "./cert.crt",
+        "sslKey": "./key.key",
+        "sslCA": "./ca_bundle.crt",
         "trustProxyIP": true
     },
 
@@ -154,8 +153,7 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 17070,
-	"password": "**YOUR WALLET RPC PASSWORD - REQUIRES PR#305 **"
+        "port": 17070
     },
 
     "redis": {
@@ -163,7 +161,7 @@
         "port": 6379,
         "auth": null,
         "db": 0,
-	"cleanupInterval": 15
+        "cleanupInterval": 15
     },
 
     "notifications": {
@@ -253,13 +251,19 @@
     },
 
     "prices": {
-        "source": "tradeogre",
+        "source": "stocks.exchange",
         "currency": "USD"
     },
     
     "charts": {
         "pool": {
             "hashrate": {
+                "enabled": true,
+                "updateInterval": 60,
+                "stepInterval": 1800,
+                "maximumPeriod": 86400
+            },
+            "miners": {
                 "enabled": true,
                 "updateInterval": 60,
                 "stepInterval": 1800,
