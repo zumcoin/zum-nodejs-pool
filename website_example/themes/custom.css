@@ -399,14 +399,14 @@ footer > div{
 }
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: rgba(0, 0, 0, 0.97);
+  background-color: rgba(56, 56, 61, 0.082);
 }
 .table > tbody > tr:hover td,
 .table > tbody > tr:hover th {
   background-color: rgba(0, 0, 0, 0.97);
 }
 .table > tbody > tr > td {
-  border-top-color: rgba(0, 0, 0, 0.97);
+  border-top-color: rgba(81, 112, 126, 0.95);
 }
 table th.sort:hover{
   cursor: pointer;
@@ -526,7 +526,6 @@ table th.sort:hover{
 }
 .hashInfo .text {
   font-size: 13px;
-  text-align: center;
   color: #ddd;
   text-transform: uppercase;
 }
@@ -865,13 +864,13 @@ table th.sort:hover{
   }  
 }
 #blocksReport .pending td{
-  background-color:rgba(0, 0, 0, 0.99);
+  background-color:rgba(22, 22, 22, 0.151);
 }
 #blocksReport .unlocked td{
-  background-color:rgba(0, 0, 0, 0.99);
+  background-color:rgba(0, 0, 0, 0.767);
 }
 #blocksReport .orphaned td{
-  background-color:rgba(5, 0, 0, 0.99);
+  background-color:rgba(92, 36, 36, 0.99);
 }
 #blocksReport .luckGood,
 #blocksReport .unlocked .col7 {
