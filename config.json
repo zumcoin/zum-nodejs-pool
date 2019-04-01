@@ -8,7 +8,7 @@
     "coinDifficultyTarget": 120,
 
     "daemonType": "zumcoin",
-    "cnAlgorithm": "cryptonight-zum-light",
+    "cnAlgorithm": "cryptonight-zum-lite",
     "cnVariant": 2,
     "cnBlobType": 2,
 
