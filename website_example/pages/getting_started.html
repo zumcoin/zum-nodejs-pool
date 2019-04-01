@@ -295,7 +295,7 @@ currentPage = {
         if (!lastStats.config.fixedDiffEnabled) $('#fixedDiff').hide();
 
         var coin = lastStats.config.coin.toLowerCase() || null;
-        var cnAlgorithm = lastStats.config.cnAlgorithm || "cryptonight";
+        var cnAlgorithm = lastStats.config.cnAlgorithm || "cryptonight-zum-lite";
         var cnVariant = lastStats.config.cnVariant || 0;
 
         algorithm = '';
@@ -312,6 +312,10 @@ currentPage = {
                 algorithm = 'Cryptonight Light (Original)';
                 xmrstakAlgo = 'cryptonight_lite';
             }
+        }
+        else if (cnAlgorithm == "cryptonight-zum-lite") {
+            algorithm = 'Cryptonight-zum-lite';
+            xmrstakAlgo = 'cryptonight_zum';
         }
         else if (cnAlgorithm == "cryptonight_heavy") {
             algorithm = 'Cryptonight Heavy';
