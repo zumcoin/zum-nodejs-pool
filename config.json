@@ -1,5 +1,5 @@
 {
-    "poolHost": "https://EnterYourPoolAddressHere.com",
+    "poolHost": "EnterYourPoolAddressHere.com",
 
     "coin": "ZUMCOIN-TEST",
     "symbol": "ZUM",
