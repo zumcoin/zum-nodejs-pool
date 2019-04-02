@@ -438,7 +438,7 @@ table th.sort:hover{
   width: 100%;
   margin: 0;
   padding: 0;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgb(46, 168, 226);
   border-radius: 3px;
   color: #eee;
   background: rgba(0, 0, 0, 0.64);
@@ -450,8 +450,8 @@ table th.sort:hover{
 
 /* Info box */
 .infoBox {
-  background-color: #03a9f4;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.51);
+  box-shadow: 0 1px 4px 0 rgb(46, 168, 226);
   height: 80px;  
   cursor: default;
   position: relative;
@@ -512,7 +512,7 @@ table th.sort:hover{
 /* Hash info box */
 .hashInfo {
   background-color: rgba(0, 0, 0, 0.94);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgb(46, 168, 226);
   cursor: default;
   padding: 15px;
   border-radius: 3px;
