@@ -164,7 +164,7 @@ Explanation for each field:
 "poolHost": "your.pool.host",
 
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "zumcoin",
+"coin": "ZUMCOIN",
 
 /* Used for front-end display */
 "symbol": "ZUM",
