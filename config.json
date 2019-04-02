@@ -1,7 +1,7 @@
 {
     "poolHost": "your.poolhost.tld",
 
-    "coin": "zumcoin",
+    "coin": "ZUMCOIN",
     "symbol": "ZUM",
     "coinUnits": 100000000,
     "coinDecimalPlaces": 8,
