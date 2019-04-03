@@ -109,7 +109,7 @@
         "enabled": true,
         "interval": 360,
         "maxAddresses": 50,
-        "mixin": 1,
+        "mixin": 0,
         "priority": 0,
         "transferFee": 10000000,
         "dynamicTransferFee": true,
